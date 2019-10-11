@@ -1,0 +1,7 @@
+## Big Picture
+----------------------
+The application will require multiple aspects for front end and back end ties.
+The application is designed to match users to one another based on compatibility that is calculated based on answers to 10 questions
+A user input with name / picture (link) must be added, in addition to capturing score for questions as array
+This array will hold answers that will be compared against one another to calcuate total difference, which will translate into how compatible one user is with another
+
