@@ -35,23 +35,120 @@
                     </div>
             </div>
         </div>
-        <div>
-            <h3>Question 1</h3>
-            <h5>This is a placement dummy for question</h5>
-            <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select An Option
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="Q1drop">
-                    <a class="dropdown-item" id="val5" href="#">5 (Highly Agree)</a>
-                    <a class="dropdown-item" id="val4" href="#">4</a>
-                    <a class="dropdown-item" id="val3" href="#">3</a>
-                    <a class="dropdown-item" id="val2" href="#">2</a>
-                    <a class="dropdown-item" id="val1" href="#">1 (Highly Disagree)</a>
-                </div>
+            <div class="form-group">
+				<label for="question1">I like to look at the stars with goggles on</label>
+				<select class="form-control" id="Q1">
+					<option value="empty"></option>
+					<option value="5">5 (Highly Agree)</option>
+					<option value="4">4</option>
+					<option value="3">3</option>
+					<option value="2">2</option>
+					<option value="1">1 (Highly Disagree)</option>
+				</select>
             </div>
-        </div>
+            <div class="form-group">
+				<label for="question2">Collecting traffic signs is a favorite pastime of mine</label>
+				<select class="form-control" id="Q2">
+					<option value="empty"></option>
+					<option value="5">5 (Highly Agree)</option>
+					<option value="4">4</option>
+					<option value="3">3</option>
+					<option value="2">2</option>
+					<option value="1">1 (Highly Disagree)</option>
+				</select>
+            </div>
+            <div class="form-group">
+				<label for="question3">I have a deep interest in counting grains of sand on the beach</label>
+				<select class="form-control" id="Q3">
+					<option value="empty"></option>
+					<option value="5">5 (Highly Agree)</option>
+					<option value="4">4</option>
+					<option value="3">3</option>
+					<option value="2">2</option>
+					<option value="1">1 (Highly Disagree)</option>
+				</select>
+            </div>
+            <div class="form-group">
+				<label for="question4">I enjoying playing jenga with dvds</label>
+				<select class="form-control" id="Q4">
+					<option value="empty"></option>
+					<option value="5">5 (Highly Agree)</option>
+					<option value="4">4</option>
+					<option value="3">3</option>
+					<option value="2">2</option>
+					<option value="1">1 (Highly Disagree)</option>
+				</select>
+            </div>
+            <div class="form-group">
+				<label for="question5">I like to sort socks in my free time</label>
+				<select class="form-control" id="Q5">
+					<option value="empty"></option>
+					<option value="5">5 (Highly Agree)</option>
+					<option value="4">4</option>
+					<option value="3">3</option>
+					<option value="2">2</option>
+					<option value="1">1 (Highly Disagree)</option>
+				</select>
+            </div>
+            <div class="form-group">
+				<label for="question6">I often like to dust my concert posters</label>
+				<select class="form-control" id="Q6">
+					<option value="empty"></option>
+					<option value="5">5 (Highly Agree)</option>
+					<option value="4">4</option>
+					<option value="3">3</option>
+					<option value="2">2</option>
+					<option value="1">1 (Highly Disagree)</option>
+				</select>
+            </div>
+            <div class="form-group">
+				<label for="question7">Talking to ducks is something that excites me terribly</label>
+				<select class="form-control" id="Q7">
+					<option value="empty"></option>
+					<option value="5">5 (Highly Agree)</option>
+					<option value="4">4</option>
+					<option value="3">3</option>
+					<option value="2">2</option>
+					<option value="1">1 (Highly Disagree)</option>
+				</select>
+            </div>
+            <div class="form-group">
+				<label for="question8">The Cookie Monster taught me everything that I need to know</label>
+				<select class="form-control" id="Q8">
+					<option value="empty"></option>
+					<option value="5">5 (Highly Agree)</option>
+					<option value="4">4</option>
+					<option value="3">3</option>
+					<option value="2">2</option>
+					<option value="1">1 (Highly Disagree)</option>
+				</select>
+            </div>
+            <div class="form-group">
+				<label for="question9">I thoroughly enjoy throwing frisbees at beer cans on top of ski poles</label>
+				<select class="form-control" id="Q9">
+					<option value="empty"></option>
+					<option value="5">5 (Highly Agree)</option>
+					<option value="4">4</option>
+					<option value="3">3</option>
+					<option value="2">2</option>
+					<option value="1">1 (Highly Disagree)</option>
+				</select>
+            </div>
+            <div class="form-group">
+				<label for="question10">I like to collect coffee cups that will likely not ever hold coffee</label>
+				<select class="form-control" id="Q10">
+					<option value="empty"></option>
+					<option value="5">5 (Highly Agree)</option>
+					<option value="4">4</option>
+					<option value="3">3</option>
+					<option value="2">2</option>
+					<option value="1">1 (Highly Disagree)</option>
+				</select>
+            </div>
+            <hr>
+            <div class="text-center">
+                <button id="submit-button" type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+            </div>
     </div>
 
 
@@ -66,6 +163,31 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+        $("#submit-button").on("click", function (event){
+            event.preventDefault();
+            var thisUser = {
+                name: $("#nameinput").val().trim(),
+                photo: $("#imageinput").val().trim(),
+                userScore: [
+                    $("#Q1").val(),
+                    $("#Q2").val(),
+                    $("#Q3").val(),
+                    $("#Q4").val(),
+                    $("#Q5").val(),
+                    $("#Q6").val(),
+                    $("#Q7").val(),
+                    $("#Q8").val(),
+                    $("#Q9").val(),
+                    $("#Q10").val(),
+                ]
+            };
+            $.post("/api/friends", thisUser, function (data){
+
+            })
+        })
+        </script>
 
 </body>
 
