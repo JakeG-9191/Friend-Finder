@@ -1,14 +1,14 @@
-var friends = require("../data/friends");
+var express = require("express");
+var path = require("path");
 
-module.exports = function(app) {
-    app.get("/api/friends", function(req, res) {
-      res.json(friends);
-    });
+var friends = [];
 
-app.get("/api/friends", function (req, res){
+var app = express();
+
+app.get("/api/friends", function (req, res) {
     return res.json(friends)
 })
 
-app.post("/api/friends", friends).then(function(data){
+app.post("/api/friends", friends).then(function (data) {
     console.log("friends", data)
-});
+})
