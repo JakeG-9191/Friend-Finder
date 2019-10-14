@@ -148,21 +148,24 @@
 		<div class="text-center">
 			<button id="submit-button" type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
 		</div>
+		<div>
+			<h3>Your Best Friend Is:</h3>
+			<p id="#newFriend"></p>
+			<p id="#friendPhoto"></p>
+		</div>
 	</div>
-    <footer>
-        <div class="container">
-            <a href="/api/friends">API Friends List |</a>
-            <a target="_blank" href="https://github.com/JakeG-9191/Friend-Finder">Github Repo</a>
-        </div>
-    </footer>
+	<footer>
+		<div class="container">
+			<a href="/api/friends">API Friends List |</a>
+			<a target="_blank" href="https://github.com/JakeG-9191/Friend-Finder">Github Repo</a>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-		crossorigin="anonymous"></script>
 
 	<script type="text/javascript">
 		$("#submit-button").on("click", function (event) {
@@ -172,23 +175,25 @@
 				name: $("#nameinput").val().trim(),
 				photo: $("#imageinput").val().trim(),
 				userScore: [
-					$("#Q1").val(),
-					$("#Q2").val(),
-					$("#Q3").val(),
-					$("#Q4").val(),
-					$("#Q5").val(),
-					$("#Q6").val(),
-					$("#Q7").val(),
-					$("#Q8").val(),
-					$("#Q9").val(),
-					$("#Q10").val(),
+					$("#Q1").val().trim(),
+					$("#Q2").val().trim(),
+					$("#Q3").val().trim(),
+					$("#Q4").val().trim(),
+					$("#Q5").val().trim(),
+					$("#Q6").val().trim(),
+					$("#Q7").val().trim(),
+					$("#Q8").val().trim(),
+					$("#Q9").val().trim(),
+					$("#Q10").val().trim()
 				]
 			};
-			$.post("/app/data/friends", thisUser)
-				.then(function (data) {
-					console.log("adding new friend", data);
-					alert("adding friend")
-				})
+			var URL = window.location.origin;
+
+			$.post(URL + "/api/friends", thisUser, function (data){
+				$("#newFriend").text(data.name);
+				$("#friendPhoto").attr("src", data.photo);
+			})
+				
 		})
 	</script>
 
