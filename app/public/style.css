@@ -1,0 +1,65 @@
+body {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-image: url("https://www.faxburner.com/blog/wp-content/uploads/2017/11/business_network.jpg");
+    background-size: 110%;
+    background-attachment: fixed;
+    opacity: .95;
+    font-size: 20px;
+}
+
+.jumbotron {
+    border-radius: 18px;
+    text-align: center;
+    border-style: solid;
+}
+
+.form-group {
+    background: bisque;
+    padding: 1rem;
+    border-radius: 18px;
+    border-color: black;
+    border-style: solid;
+}
+
+.form-group-no {
+    padding: 2rem 0;
+    font-size: 26px;
+}
+
+.friend-info {
+    background: aliceblue;
+    padding: 2rem;
+    border-radius: 18px;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-style: solid;
+}
+
+#api-links {
+    background: bisque;
+    padding: 1rem;
+    border-radius: 18px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: fit-content;
+}
+
+#bottom-button {
+    text-align: center;
+}
+
+#survey-button {
+    padding: 2rem;
+}
+
+#submit-button {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-style: solid;
+}
+
+img {
+    border-radius: 18px;
+}

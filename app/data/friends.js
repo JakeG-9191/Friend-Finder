@@ -30,6 +30,54 @@ var friends = [
             2,
             1
         ]
+    },
+    {
+        "name": "Randy",
+        "photo": "http://www.apimages.com/Images/Ap_Creative_Stock_Header.jpg",
+        "userScore": [
+            5,
+            1,
+            2,
+            4,
+            3,
+            4,
+            2,
+            4,
+            2,
+            2
+        ]
+    },
+    {
+        "name": "Michelle",
+        "photo": "https://thumb9.shutterstock.com/mosaic_250/580987/1013442520/stock-photo-photo-of-happy-young-woman-standing-isolated-over-white-wall-background-looking-camera-showing-1013442520.jpg",
+        "userScore": [
+            4,
+            2,
+            3,
+            4,
+            2,
+            1,
+            1,
+            4,
+            2,
+            5
+        ]
+    },
+    {
+        "name": "Jenny",
+        "photo": "https://img.freepik.com/free-photo/beautiful-young-woman-pointing-up-white-background_1301-7744.jpg?size=626&ext=jpg",
+        "userScore": [
+            3,
+            1,
+            2,
+            5,
+            3,
+            4,
+            2,
+            5,
+            2,
+            3
+        ]
     }
 ];
 
