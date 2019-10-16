@@ -1,5 +1,5 @@
 ## Friend Finder
-Friend Finder is an application that allows the user to take a survey and be matched with a new best friend based on thier answers!
+Friend Finder is an application that allows the user to take a survey and be matched with a new best friend based on thier answers! To reach the application, please visit the following link https://boiling-bayou-10154.herokuapp.com/ 
 
 ## Application Information
 Friend Finder is hosted on heroku and offers the user the chance to the take the survey as many times as they like. The user is directed to home page (screenshot below) where they have the option to take the survey or look at JSON data for the friends that are currently housed within the application. 
