@@ -4,7 +4,7 @@
   "description": "Friend Finder is an application that allows the user to take a survey and be matched with a new best friend based on thier answers!",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "path": "^0.12.7"
   },
   "devDependencies": {},
